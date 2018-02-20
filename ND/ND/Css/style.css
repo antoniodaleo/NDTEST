@@ -76,6 +76,14 @@ h1 {
     padding:1%;
 }
 
+#slide 
+{
+    background:url(../Image/Borsa.jpg);
+    background-repeat:no-repeat; 
+    
+}
+
+
 /* Formatacao da pagina default */
 .header {
     width:1200px;
