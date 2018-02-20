@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3325B49C-C0F5-4016-9FF0-F03AFC3ED811}</ProjectGuid>
+    <ProjectGuid>{D8A1DF67-3BD4-4468-ADD0-FD739325288E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ND</RootNamespace>
-    <AssemblyName>ND</AssemblyName>
+    <RootNamespace>ND.DAL</RootNamespace>
+    <AssemblyName>ND.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,57 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\css\bootstrap-theme.css" />
-    <Content Include="Css\css\bootstrap-theme.min.css" />
-    <Content Include="Css\css\bootstrap.css" />
-    <Content Include="Css\css\bootstrap.min.css" />
-    <Content Include="Css\css\main.css" />
-    <Content Include="Css\js\bootstrap.js" />
-    <Content Include="Css\js\bootstrap.min.js" />
-    <Content Include="Css\js\npm.js" />
-    <Content Include="Css\style.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="Image\Borsa.jpg" />
-    <Content Include="Image\cp.jpg.png" />
-    <Content Include="Image\icona.png" />
-    <Content Include="Sistema\Listagem.aspx" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="ConnectionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sistema\Listagem.aspx.cs">
-      <DependentUpon>Listagem.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sistema\Listagem.aspx.designer.cs">
-      <DependentUpon>Listagem.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Css\css\bootstrap-theme.css.map" />
-    <Content Include="Css\css\bootstrap-theme.min.css.map" />
-    <Content Include="Css\css\bootstrap.css.map" />
-    <Content Include="Css\css\bootstrap.min.css.map" />
-    <Content Include="Css\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Css\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Css\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Css\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Css\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -121,9 +73,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1638</DevelopmentServerPort>
+          <DevelopmentServerPort>8185</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1638/</IISUrl>
+          <IISUrl>http://localhost:8185/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

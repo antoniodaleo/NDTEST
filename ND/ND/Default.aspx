@@ -29,9 +29,9 @@
                
            <div class="row" style="margin-top:5px " > 
              <nav class="nav nav-pills nav-justified">
-                  <a class="nav-item nav-link active" href="#">Home</a>
-                  <a class="nav-item nav-link" href="#">Cadastro</a>
-                  <a class="nav-item nav-link" href="#">Listar</a>
+                  <a class="nav-item nav-link active" href="Default.aspx">Home</a>
+                  <a class="nav-item nav-link" href="Default.aspx">Cadastro</a>
+                  <a class="nav-item nav-link" href="Sistema/Listagem.aspx">Listar</a>
                   <a class="nav-item nav-link disabled" href="#">About me</a>
              </nav>
           </div>       
