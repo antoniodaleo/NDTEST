@@ -16,14 +16,24 @@
     
 
       <div class="container">
-     
-           <div class="row" > 
-              <ul class="nav nav-pills">
-                <li><a href="#" class="active">Home</a></li>              
-                <li><a href="#">Cadastro</a></li>                          
-                <li><a href="#">Pesquisa</a></li>
-                <li><a href="#">About me</a></li>
-              </ul>
+          <div class="row">
+              <!-- Image and text -->
+                <nav class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                    <img src="Image/icona.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Agenda de Contatos® 
+                  </a>
+                </nav>
+          </div> 
+          
+               
+           <div class="row" style="margin-top:5px " > 
+             <nav class="nav nav-pills nav-justified">
+                  <a class="nav-item nav-link active" href="#">Home</a>
+                  <a class="nav-item nav-link" href="#">Cadastro</a>
+                  <a class="nav-item nav-link" href="#">Listar</a>
+                  <a class="nav-item nav-link disabled" href="#">About me</a>
+             </nav>
           </div>       
           <!--End Menu-->
           
@@ -36,20 +46,20 @@
     
           
               <form id="form2" runat="server">
-                <div class="form-row">       
+                <div class="form-row " style="margin-top:70px">       
                     <div class="form-group col-md-6">
                         <asp:Label ID="lblFirstNome" runat="server" Text="Nome"></asp:Label>
-                        <asp:TextBox ID="txtFirstNome" runat="server" placeholder="O seu nome" CssClass="form-control" ></asp:TextBox>
+                        <asp:TextBox ID="txtFirstNome" runat="server" ToolTip="Preencha o campo" placeholder="O seu nome" CssClass="form-control" required autofocus></asp:TextBox>
                     </div> 
                     <div class="form-group col-md-6">
                         <asp:Label ID="lblEndereco" runat="server" Text="Endereco"></asp:Label>
-                        <asp:TextBox ID="txtEndereco" runat="server" placeholder="Endereco" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtEndereco" runat="server" ToolTip="Preencha o campo" placeholder="Endereco" CssClass="form-control" required></asp:TextBox>
                     </div>      
                 </div><!--End 1 row--> 
                 <div class="row">
                    <div class="form-group col-md-4">
                        <asp:Label ID="lblLograduro" runat="server" Text="Lograduro"></asp:Label>
-                       <asp:TextBox ID="txtLograduro" runat="server" placeholder="Lograduro" CssClass="form-control"></asp:TextBox>
+                       <asp:TextBox ID="txtLograduro" runat="server" placeholder="Lograduro" ToolTip="Preencha o campo" CssClass="form-control" required></asp:TextBox>
                    </div>     
                    <div class="form-group col-md-4">
                        <asp:Label ID="lblNumero" runat="server" Text="Numero"></asp:Label>
