@@ -57,7 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\contatoInvalidoExceptions.cs" />
+    <Compile Include="Exceptions\contatoNaoCadastradoExceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistema\contatoBLL.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ND.DAL\ND.DAL.csproj">
+      <Project>{d8a1df67-3bd4-4468-add0-fd739325288e}</Project>
+      <Name>ND.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ND.MODAL\ND.MODAL.csproj">
+      <Project>{71c1f504-bed8-4e49-8b69-abc14a3dffdc}</Project>
+      <Name>ND.MODAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -107,7 +107,20 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ND.BLL\ND.BLL.csproj">
+      <Project>{f6707ce2-350c-4c90-b9cf-0047ebd6ead9}</Project>
+      <Name>ND.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ND.DAL\ND.DAL.csproj">
+      <Project>{d8a1df67-3bd4-4468-add0-fd739325288e}</Project>
+      <Name>ND.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ND.MODAL\ND.MODAL.csproj">
+      <Project>{71c1f504-bed8-4e49-8b69-abc14a3dffdc}</Project>
+      <Name>ND.MODAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
