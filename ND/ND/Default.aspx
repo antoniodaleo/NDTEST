@@ -8,51 +8,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agenda de Contatos - Desenvolvido por Antonio D'Aleo</title>
-   
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href="Css/css/main.css" rel="stylesheet" />
+    <link href="Css/css/bootstrap.min.css" rel="stylesheet">
+    <!--Simple Menu to insert<link href="Css/style.css" rel="stylesheet" />-->
 </head>
 <body>
     
 
       <div class="container">
           <!--Simple Menu to insert-->
-           <div class="row" style="margin-top: 5px">
+           <div class="row" >
              
              <ul class="nav nav-pills">
                 <li class="active">
-                  <a href="#">Home</a>
+                  <a href="http://www.google.com">Home</a>
                 </li>
                 
                 <li><a href="#">Cadastro</a></li>
                  
-                 <!--Dropdown insert-->
-                 <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pesquisa <b class="caret"></b>
-                     </a>
-                    
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Listar</a></li>
-                        <li><a href="#">Edit</a></li>
-                        <li><a href="#">Deleta</a></li>
-                    </ul>
-                  </li>
-                
-                <li><a href="#">About me</a></li>
-              </ul>
-          </div>       
-          <!--End Menu-->
+                 
+                 <li><a href="#">Pesquisa</a></li>
 
+                 <li><a href="#">About me</a></li>
+                 
+
+
+              </ul>
+               
+              
+               
+          </div>       
+                 <!--End Menu-->
+          
+          
+          <div class="row">
+              <p></p>
+          </div>
+          
           <!--Simple Form to insert-->
           <div class="row">
               <form id="form2" runat="server">
                 <div class="form-group"> 
-                      
+                     <div>
+                        <h6>Agenda de Contatos® - Desenvolvido por Antonio D'Aleo</h6>
+                        <p><span> [ Cadastro de Novos Contatos ]</span></p>
+                     </div>
+                    
+                     
 
                 </div>
              </form> 
           </div>
-          <!--End Form-->
+          <!--End Form-->  
+                    
+
+        
 
 
 

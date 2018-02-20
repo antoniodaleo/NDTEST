@@ -1,0 +1,6 @@
+C:\Users\antonio\DM\ND\ND\bin\ND.dll.config
+C:\Users\antonio\DM\ND\ND\bin\ND.dll
+C:\Users\antonio\DM\ND\ND\bin\ND.pdb
+C:\Users\antonio\DM\ND\ND\obj\Debug\ND.VIEW.csprojResolveAssemblyReference.cache
+C:\Users\antonio\DM\ND\ND\obj\Debug\ND.dll
+C:\Users\antonio\DM\ND\ND\obj\Debug\ND.pdb
