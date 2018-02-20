@@ -4,3 +4,9 @@ C:\Users\antonio\DM\ND\ND\bin\ND.pdb
 C:\Users\antonio\DM\ND\ND\obj\Debug\ND.VIEW.csprojResolveAssemblyReference.cache
 C:\Users\antonio\DM\ND\ND\obj\Debug\ND.dll
 C:\Users\antonio\DM\ND\ND\obj\Debug\ND.pdb
+C:\Users\antonio\DM\ND\ND\bin\ND.BLL.dll
+C:\Users\antonio\DM\ND\ND\bin\ND.DAL.dll
+C:\Users\antonio\DM\ND\ND\bin\ND.MODAL.dll
+C:\Users\antonio\DM\ND\ND\bin\ND.BLL.pdb
+C:\Users\antonio\DM\ND\ND\bin\ND.DAL.pdb
+C:\Users\antonio\DM\ND\ND\bin\ND.MODAL.pdb

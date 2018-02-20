@@ -1,0 +1,5 @@
+C:\Users\antonio\DM\ND\ND.MODAL\bin\ND.MODAL.dll
+C:\Users\antonio\DM\ND\ND.MODAL\bin\ND.MODAL.pdb
+C:\Users\antonio\DM\ND\ND.MODAL\obj\Debug\ND.MODAL.csprojResolveAssemblyReference.cache
+C:\Users\antonio\DM\ND\ND.MODAL\obj\Debug\ND.MODAL.dll
+C:\Users\antonio\DM\ND\ND.MODAL\obj\Debug\ND.MODAL.pdb

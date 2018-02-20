@@ -57,8 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bairroDAO.cs" />
     <Compile Include="ConnectionFactory.cs" />
     <Compile Include="contatoDAO.cs" />
+    <Compile Include="grupoDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

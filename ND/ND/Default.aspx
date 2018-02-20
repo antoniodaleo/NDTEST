@@ -90,22 +90,22 @@
                         <asp:TextBox ID="txtResidencial" runat="server" CssClass="form-control" placeholder="Recidencial" TextMode="Phone"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-4">
-                        <asp:Label ID="lblCommercial" runat="server" Text="Fone"></asp:Label>
+                        <asp:Label ID="lblCommercial" runat="server" Text="Commercial"></asp:Label>
                         <asp:TextBox ID="txtCom1" runat="server" CssClass="form-control" placeholder="Comercial" TextMode="Phone"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-4">
-                        <asp:Label ID="Label3" runat="server" Text="Fone"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Commercial"></asp:Label>
                         <asp:TextBox ID="txtCom2" runat="server" CssClass="form-control" placeholder="Commercial" TextMode="Phone"></asp:TextBox>
                     </div>
                 </div> <!--End 4 row--> 
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <asp:Label ID="lblDpBairro" runat="server" Text="Bairro"></asp:Label>
-                        <asp:DropDownList ID="dpBairro" runat="server" CssClass="dropdown form-control" ></asp:DropDownList>
+                        <asp:DropDownList ID="dpBairro" runat="server"  DataValueField="Id" DataTextField="Descricao" CssClass="dropdown form-control-lg " ></asp:DropDownList>
                     </div>
                     <div class="form-group col-md-4">
                         <asp:Label ID="lblDpGrupo" runat="server" Text="Grupo"></asp:Label>
-                        <asp:DropDownList ID="dpGrupo" runat="server" CssClass="dropdown form-control" ></asp:DropDownList>
+                        <asp:DropDownList ID="dpGrupo" runat="server"  DataValueField="id" DataTextField="descricao" CssClass="dropdown form-control" ></asp:DropDownList>
                     </div>
                     <div class="form-group col-md-4">
                         <asp:Label ID="lbl" runat="server" Text="Data de Cadastro"></asp:Label>
