@@ -22,6 +22,7 @@ namespace ND.DAL
                 ,lograduro
                 ,numero
                 ,complemento
+               
                 ,celular1
                 ,celular2
                 ,celular3 
@@ -37,6 +38,7 @@ VALUES
                 (@NOME
                 ,@ENDERECO
                 ,@LOGRADURO
+                
                 ,@NUMERO
                 ,@COMPLEMENTO
                 ,@CELULAR1
@@ -53,6 +55,7 @@ VALUES
                 command.Parameters.AddWithValue("@NOME", cont.nome);
                 command.Parameters.AddWithValue("@ENDERECO", cont.endereco);
                 command.Parameters.AddWithValue("@LOGRADURO", cont.lograduro);
+               
                 command.Parameters.AddWithValue("@NUMERO", cont.numero);
                 command.Parameters.AddWithValue("@COMPLEMENTO", cont.complemento);
                 command.Parameters.AddWithValue("@CELULAR1", cont.celular1);

@@ -10,7 +10,7 @@
     <title>Agenda de Contatos - Desenvolvido por Antonio D'Aleo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="Css/css/bootstrap.min.css" rel="stylesheet">
-    <!--Simple Menu to insert<link href="Css/style.css" rel="stylesheet" />-->
+    <link href="Css/style.css" rel="stylesheet" />
 </head>
 <body>
     
@@ -47,11 +47,15 @@
           
               <form id="form2" runat="server">
                 <div class="form-row " style="margin-top:70px">       
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <asp:Label ID="lblFirstNome" runat="server" Text="Nome"></asp:Label>
                         <asp:TextBox ID="txtFirstNome" runat="server" ToolTip="Preencha o campo" placeholder="O seu nome" CssClass="form-control" required autofocus></asp:TextBox>
+                    </div>
+                     <div class="form-group col-md-4">
+                        <asp:Label ID="lblDpGrupo" runat="server" Text="Grupo"></asp:Label>
+                        <asp:DropDownList ID="dpGrupo" runat="server"  DataValueField="Id" DataTextField="Descricao" CssClass="campo" ></asp:DropDownList>
                     </div> 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <asp:Label ID="lblEndereco" runat="server" Text="Endereco"></asp:Label>
                         <asp:TextBox ID="txtEndereco" runat="server" ToolTip="Preencha o campo" placeholder="Endereco" CssClass="form-control" required></asp:TextBox>
                     </div>      
@@ -61,7 +65,7 @@
                        <asp:Label ID="lblLograduro" runat="server" Text="Lograduro"></asp:Label>
                        <asp:TextBox ID="txtLograduro" runat="server" placeholder="Lograduro" ToolTip="Preencha o campo" CssClass="form-control" required></asp:TextBox>
                    </div>     
-                   <div class="form-group col-md-4">
+                   <div class="form-group col-md-1">
                        <asp:Label ID="lblNumero" runat="server" Text="Numero"></asp:Label>
                        <asp:TextBox ID="txtNumero" runat="server" TextMode="Number" placeholder="N." CssClass="form-control"></asp:TextBox>
                    </div>     
@@ -69,18 +73,24 @@
                        <asp:Label ID="lblComplemento" runat="server" Text="Complemento"></asp:Label>
                        <asp:TextBox ID="txtComplemento" runat="server"  placeholder="Complemento" CssClass="form-control"></asp:TextBox>
                    </div>
+                   <div class="form-group col-md-3">
+                       <asp:Label ID="lblDpBairro" runat="server" Text="Bairro"></asp:Label>
+                       <asp:DropDownList ID="dpBairro" runat="server"  DataValueField="Id" DataTextField="Descricao"  CssClass="campo"   ></asp:DropDownList>
+                   </div>
+                  
+
                 </div><!--End 2 row-->  
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <asp:Label ID="lblNum1" runat="server" Text="Fone"></asp:Label>
+                        <asp:Label ID="lblNum1" runat="server" Text="Celular"></asp:Label>
                         <asp:TextBox ID="TextNum1" runat="server" CssClass="form-control" placeholder="Fone" TextMode="Phone"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-4">
-                        <asp:Label ID="lblNum2" runat="server" Text="Fone"></asp:Label>
+                        <asp:Label ID="lblNum2" runat="server" Text="Add Celular"></asp:Label>
                         <asp:TextBox ID="TextNum2" runat="server" CssClass="form-control" placeholder="Fone" TextMode="Phone"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-4">
-                        <asp:Label ID="lblNum3" runat="server" Text="Fone"></asp:Label>
+                        <asp:Label ID="lblNum3" runat="server" Text="Add Celular"></asp:Label>
                         <asp:TextBox ID="TextNum3" runat="server" CssClass="form-control" placeholder="Fone" TextMode="Phone"></asp:TextBox>
                     </div>
                 </div> <!--End 3 row-->   
@@ -94,30 +104,43 @@
                         <asp:TextBox ID="txtCom1" runat="server" CssClass="form-control" placeholder="Comercial" TextMode="Phone"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-4">
-                        <asp:Label ID="Label3" runat="server" Text="Commercial"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Add Commercial"></asp:Label>
                         <asp:TextBox ID="txtCom2" runat="server" CssClass="form-control" placeholder="Commercial" TextMode="Phone"></asp:TextBox>
                     </div>
-                </div> <!--End 4 row--> 
+                </div> <!--End 4 row-->
                 <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <asp:Label ID="lblDpBairro" runat="server" Text="Bairro"></asp:Label>
-                        <asp:DropDownList ID="dpBairro" runat="server"  DataValueField="Id" DataTextField="Descricao" CssClass="dropdown form-control-lg " ></asp:DropDownList>
+                    
+                    <div class="form-group col-md-4 ">
+                        <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
                     </div>
-                    <div class="form-group col-md-4">
-                        <asp:Label ID="lblDpGrupo" runat="server" Text="Grupo"></asp:Label>
-                        <asp:DropDownList ID="dpGrupo" runat="server"  DataValueField="id" DataTextField="descricao" CssClass="dropdown form-control" ></asp:DropDownList>
-                    </div>
-                    <div class="form-group col-md-4">
+                    
+                    <div class="form-group col-md-4 ">
+                        <asp:Label ID="Label2" runat="server" Text="Site"></asp:Label>
+                        <asp:TextBox ID="txtSite" runat="server" CssClass="form-control" TextMode="Url"></asp:TextBox>
+                    </div>   
+                
+                    <div class="form-group  col-md-4 ">
                         <asp:Label ID="lbl" runat="server" Text="Data de Cadastro"></asp:Label>
-                        <asp:TextBox ID="txtData" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                        <asp:TextBox ID="txtData"  runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                     </div>
-                </div>  <!--End 5 row-->
-                <div class="form-row">
-                    <div class="form-group">
-                        <asp:Button ID="btnCadastrar" type="button" data-toggle="tooltip"  runat="server"  data-placement="right" Text="Cadastra" CssClass="btn btn-secondary" title="Cliqua para cadastrar-se"/>
+                    
+                </div>  <!--End 5 row-->   
+                   
+                  <div class="form-row">          
+                     <div class="form-group col-md-4 ">
+                        <asp:Button ID="btnCadastra" type="button" data-toggle="tooltip"  runat="server"  data-placement="right" Text="Cadastra" CssClass="btn btn-secondary" title="Cliqua para cadastrar-se" OnClick="btnCadastra_Click"/>
                     </div>
-
-                </div>          
+                 </div><!--End 6 row-->
+                 
+                  <div class="form-row">
+                    <div class="form-group col-md-4 ">
+                     <asp:Label ID="lblSuccess" runat="server" Text="" CssClass="alert-success"></asp:Label>
+                     <asp:Label ID="lblDanger" runat="server" Text="" CssClass="alert-danger"></asp:Label> 
+                     <asp:Label ID="lblAttencion" runat="server" Text="" CssClass="alert-info"></asp:Label>   
+                   </div>
+                 </div><!--End 7 row , Colonna di messaggio-->
+            
              </form> 
          
           <!--End Form-->  

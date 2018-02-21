@@ -40,6 +40,24 @@ namespace ND {
         protected global::System.Web.UI.WebControls.TextBox txtFirstNome;
         
         /// <summary>
+        /// lblDpGrupo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDpGrupo;
+        
+        /// <summary>
+        /// dpGrupo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpGrupo;
+        
+        /// <summary>
         /// lblEndereco control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,24 @@ namespace ND {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtComplemento;
+        
+        /// <summary>
+        /// lblDpBairro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDpBairro;
+        
+        /// <summary>
+        /// dpBairro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpBairro;
         
         /// <summary>
         /// lblNum1 control.
@@ -220,40 +256,40 @@ namespace ND {
         protected global::System.Web.UI.WebControls.TextBox txtCom2;
         
         /// <summary>
-        /// lblDpBairro control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDpBairro;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// dpBairro control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpBairro;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// lblDpGrupo control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDpGrupo;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// dpGrupo control.
+        /// txtSite control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpGrupo;
+        protected global::System.Web.UI.WebControls.TextBox txtSite;
         
         /// <summary>
         /// lbl control.
@@ -274,12 +310,39 @@ namespace ND {
         protected global::System.Web.UI.WebControls.TextBox txtData;
         
         /// <summary>
-        /// btnCadastrar control.
+        /// btnCadastra control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadastrar;
+        protected global::System.Web.UI.WebControls.Button btnCadastra;
+        
+        /// <summary>
+        /// lblSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSuccess;
+        
+        /// <summary>
+        /// lblDanger control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDanger;
+        
+        /// <summary>
+        /// lblAttencion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAttencion;
     }
 }

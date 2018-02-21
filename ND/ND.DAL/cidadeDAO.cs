@@ -7,18 +7,18 @@ using System.Data.SqlClient;
 
 namespace ND.DAL
 {
-    public class grupoDAO
+    public class cidadeDAO
     {
-        public List<grupo> obterTodosGrupos()
+        public List<cidade> obterTodasCidade()
         {
             try
             {
                 var command = new SqlCommand();
                 command.Connection = ConnectionFactory._connection;
 
-                command.CommandText = "SELECT *FROM grupo";
+                command.CommandText = "SELECT  bar.id , bar.descricao, cid.descricao  as cidade from  bairro bar inner join cidade cid on cid.id = bar.cidade";
 
-                var listaGrupo= new List<grupo>();
+                var listaCidade = new List<cidade>();
 
                 ConnectionFactory.Conectar();
 
@@ -26,18 +26,18 @@ namespace ND.DAL
 
                 while (reader.Read())
                 {
-                    var gru = new grupo();
+                    var cid = new cidade();
 
-                    gru.id = Convert.ToInt32(reader["id"]);
-                    gru.descricao = Convert.ToString(reader["descricao"]);
-                    
+                    cid.id = Convert.ToInt32(reader["id"]);
+                    cid.descricao = Convert.ToString(reader["descricao"]);
+                    cid.idEstado = Convert.ToInt32(reader["estado"]);
 
 
-                    listaGrupo.Add(gru);
+                    listaCidade.Add(cid);
 
                 }
-                ConnectionFactory.Desconectar();
-                return listaGrupo;
+
+                return listaCidade;
             }
             catch (Exception)
             {
@@ -49,6 +49,7 @@ namespace ND.DAL
 
 
         }
+
 
     }
 }

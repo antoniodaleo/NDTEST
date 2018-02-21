@@ -60,9 +60,11 @@
     <Compile Include="Exceptions\bairroNaoCadastradoExceptions.cs" />
     <Compile Include="Exceptions\contatoInvalidoExceptions.cs" />
     <Compile Include="Exceptions\contatoNaoCadastradoExceptions.cs" />
+    <Compile Include="Exceptions\grupoNaoCadastradoExceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sistema\bairroBLL.cs" />
     <Compile Include="Sistema\contatoBLL.cs" />
+    <Compile Include="Sistema\grupoBLL.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
