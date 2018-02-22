@@ -22,7 +22,6 @@ namespace ND.DAL
                 ,lograduro
                 ,numero
                 ,complemento
-               
                 ,celular1
                 ,celular2
                 ,celular3 

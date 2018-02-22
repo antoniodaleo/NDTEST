@@ -43,6 +43,27 @@ namespace ND
 
         }
 
+        private void Clean() 
+        {
+            txtFirstNome.Text = "";
+            dpGrupo.SelectedIndex = -1;
+            dpBairro.SelectedIndex = -1;
+            txtEndereco.Text = "";
+            txtLograduro.Text = "";
+            txtNumero.Text = "";
+            TextNum1.Text = "";
+            TextNum2.Text = "";
+            TextNum3.Text = "";
+            txtResidencial.Text = "";
+            txtCom1.Text = "";
+            txtCom2.Text = "";  
+            txtEmail.Text= "";
+            txtSite.Text = "";
+
+
+        }
+
+
         protected void btnCadastra_Click(object sender, EventArgs e)
         {
              var c = new contatos();
@@ -73,7 +94,7 @@ namespace ND
                     contBLL.inserirContato(c);
 
                     lblSuccess.Text = "Aluno Cadastrado com sucesso!";
-
+                    Clean(); 
 
                 }
                 catch (contatoNaoCadastradoExceptions)
